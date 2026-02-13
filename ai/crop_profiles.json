@@ -1,0 +1,191 @@
+{
+  "POTATO_001": {
+    "name": "Potato",
+    "stage": "farm",
+    "description": "Ideal growing conditions for potato crops during the farm/field stage",
+    "parameters": {
+      "soil_moisture": {
+        "unit": "%",
+        "ideal_min": 60,
+        "ideal_max": 80,
+        "accept_min": 40,
+        "accept_max": 95
+      },
+      "soil_temp": {
+        "unit": "°C",
+        "ideal_min": 15,
+        "ideal_max": 20,
+        "accept_min": 8,
+        "accept_max": 30
+      },
+      "air_temp": {
+        "unit": "°C",
+        "ideal_min": 18,
+        "ideal_max": 25,
+        "accept_min": 10,
+        "accept_max": 35
+      },
+      "humidity": {
+        "unit": "%RH",
+        "ideal_min": 60,
+        "ideal_max": 80,
+        "accept_min": 40,
+        "accept_max": 95
+      },
+      "ph": {
+        "unit": "",
+        "ideal_min": 5.5,
+        "ideal_max": 6.5,
+        "accept_min": 4.8,
+        "accept_max": 7.5
+      },
+      "sunlight": {
+        "unit": "lux",
+        "ideal_min": 6000,
+        "ideal_max": 12000,
+        "accept_min": 3000,
+        "accept_max": 12000
+      },
+      "nitrogen": {
+        "unit": "ppm",
+        "ideal_min": 120,
+        "ideal_max": 200,
+        "accept_min": 50,
+        "accept_max": 300
+      },
+      "air_quality": {
+        "unit": "ppm",
+        "ideal_min": 0,
+        "ideal_max": 150,
+        "accept_min": 0,
+        "accept_max": 400
+      }
+    }
+  },
+  "WHEAT_001": {
+    "name": "Wheat",
+    "stage": "farm",
+    "description": "Ideal growing conditions for wheat crops during the vegetative/grain filling stage",
+    "parameters": {
+      "soil_moisture": {
+        "unit": "%",
+        "ideal_min": 50,
+        "ideal_max": 70,
+        "accept_min": 30,
+        "accept_max": 85
+      },
+      "soil_temp": {
+        "unit": "°C",
+        "ideal_min": 12,
+        "ideal_max": 22,
+        "accept_min": 5,
+        "accept_max": 30
+      },
+      "air_temp": {
+        "unit": "°C",
+        "ideal_min": 15,
+        "ideal_max": 24,
+        "accept_min": 5,
+        "accept_max": 35
+      },
+      "humidity": {
+        "unit": "%RH",
+        "ideal_min": 50,
+        "ideal_max": 70,
+        "accept_min": 30,
+        "accept_max": 90
+      },
+      "ph": {
+        "unit": "",
+        "ideal_min": 6.0,
+        "ideal_max": 7.0,
+        "accept_min": 5.5,
+        "accept_max": 8.0
+      },
+      "sunlight": {
+        "unit": "lux",
+        "ideal_min": 600,
+        "ideal_max": 1000,
+        "accept_min": 300,
+        "accept_max": 1400
+      },
+      "nitrogen": {
+        "unit": "ppm",
+        "ideal_min": 100,
+        "ideal_max": 180,
+        "accept_min": 40,
+        "accept_max": 280
+      },
+      "air_quality": {
+        "unit": "ppm",
+        "ideal_min": 0,
+        "ideal_max": 130,
+        "accept_min": 0,
+        "accept_max": 350
+      }
+    }
+  },
+  "TOMATO_001": {
+    "name": "Tomato",
+    "stage": "farm",
+    "description": "Ideal growing conditions for tomato crops during the fruiting stage",
+    "parameters": {
+      "soil_moisture": {
+        "unit": "%",
+        "ideal_min": 65,
+        "ideal_max": 85,
+        "accept_min": 45,
+        "accept_max": 95
+      },
+      "soil_temp": {
+        "unit": "°C",
+        "ideal_min": 20,
+        "ideal_max": 28,
+        "accept_min": 12,
+        "accept_max": 35
+      },
+      "air_temp": {
+        "unit": "°C",
+        "ideal_min": 22,
+        "ideal_max": 30,
+        "accept_min": 15,
+        "accept_max": 38
+      },
+      "humidity": {
+        "unit": "%RH",
+        "ideal_min": 55,
+        "ideal_max": 75,
+        "accept_min": 35,
+        "accept_max": 90
+      },
+      "ph": {
+        "unit": "",
+        "ideal_min": 6.0,
+        "ideal_max": 6.8,
+        "accept_min": 5.5,
+        "accept_max": 7.5
+      },
+      "sunlight": {
+        "unit": "lux",
+        "ideal_min": 700,
+        "ideal_max": 1200,
+        "accept_min": 400,
+        "accept_max": 1600
+      },
+      "nitrogen": {
+        "unit": "ppm",
+        "ideal_min": 100,
+        "ideal_max": 170,
+        "accept_min": 40,
+        "accept_max": 250
+      },
+      "air_quality": {
+        "unit": "ppm",
+        "ideal_min": 0,
+        "ideal_max": 140,
+        "accept_min": 0,
+        "accept_max": 380
+      }
+    }
+  }
+}
