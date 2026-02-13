@@ -117,7 +117,7 @@ class FarmConditionScorer:
         # Normalize all readings
         normalized_readings = [self.normalize_reading(r, profile) for r in readings]
 
-        current = normalized_readings[0]  # Most recent
+        current = normalized_readings[-1]  # Most recent is LAST element
         features = {}
 
         # Current normalized scores
@@ -183,7 +183,7 @@ class FarmConditionScorer:
         predicted_score = round(max(0.0, min(100.0, predicted_score)), 1)
 
         # Per-parameter details with trends
-        current = readings[0]
+        current = readings[-1]  # The NEWEST reading (appended last)
         current_normalized = self.normalize_reading(current, profile)
 
         per_parameter = {}

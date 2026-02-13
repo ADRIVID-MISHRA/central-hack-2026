@@ -1,0 +1,27 @@
+============================================================
+  FINAL SYSTEM VERIFICATION
+============================================================
+
+[1] Checking File Integrity...
+  ✅ Found: model.pkl
+  ✅ Found: crop_profiles.json
+  ✅ Found: scorer.py
+  ✅ Found: main.py
+  ✅ Found: generate_training_data.py
+
+[2] Loading Scorer Engine...
+Scorer initialized: model='model.pkl', profiles='crop_profiles.json'
+  Available crops: ['POTATO_001', 'WHEAT_001', 'TOMATO_001']
+  ✅ Scorer initialized successfully.
+  ✅ Model loaded.
+  ✅ Profiles loaded: ['POTATO_001', 'WHEAT_001', 'TOMATO_001']
+
+[3] Running Sanity Checks...
+  Test A (Ideal): Score = 98.8 (Expected > 90)
+    ✅ PASS
+  Test B (Heatwave): Score = 42.3 (Expected < 60)
+    ✅ PASS
+
+============================================================
+  SYSTEM READY FOR DEPLOYMENT
+============================================================
