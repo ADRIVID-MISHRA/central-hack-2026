@@ -103,6 +103,12 @@ async def poll_and_score():
                 )
                 latest_score = result
                 score_history.append(result)
+                
+                # SAVE THE SCORE to the latest reading doc
+                # The newest reading is the last one in new_readings
+                latest_reading_id = new_readings[-1].get("_id")
+                await db.save_score(latest_reading_id, result)
+                
                 print(
                     f"[{datetime.now(timezone.utc).strftime('%H:%M:%S')}] "
                     f"+{len(new_readings)} new → "
