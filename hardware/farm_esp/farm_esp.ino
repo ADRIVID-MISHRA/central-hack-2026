@@ -8,11 +8,16 @@ DHT dht(PIN_DHT, DHTTYPE);
 //LDR
 #define LIGHT_SENSOR_PIN 34
 
+
+
 void setup() {
   Serial.begin(9600);
   dht.begin();
-  analogSetAttenuation(ADC_11db); //for LDR
+//  analogSetAttenuation(ADC_11db); //for LDR
 }
+
+
+
 
 void loop() {
   // float air_temperature = dht.readTemperature();
@@ -31,7 +36,7 @@ void loop() {
 
   //LDR
   float lux = (analogRead(LIGHT_SENSOR_PIN) / 4095.0) * 15000.0;
-  // Serial.println(lux);
+  Serial.println(lux);
   
 
 
